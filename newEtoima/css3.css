@@ -1,0 +1,469 @@
+/*  */
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(./Acme-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: myFirstFont;
+}
+
+
+body {
+    background-color: #eee;
+}
+
+#pareBox {
+    position: sticky;
+    width: 90%;
+    top: 0;
+    z-index: 2;
+    margin: auto;
+    text-align: center;
+    padding: 0 0 10px;
+}
+
+label {
+    width: 33%;
+    display: inline-block;
+    font-size: 3.4vmin;
+    text-align: center;
+}
+
+.box {
+    width: 90%;
+    margin: auto;
+    padding: 0 5px;
+    color: white;
+}
+
+.boxForm:nth-of-type(odd) {
+    background-color: #7f7e7e;
+}
+
+.box div:nth-of-type(even) {
+    background-color: rgb(61, 53, 53);
+}
+
+textarea.newperigraf {
+    width: 100%;
+    max-width: 100%;
+    font-weight: bolder;
+    max-height: 100px;
+}
+
+
+.labPan {
+    height: 100%;
+    overflow: hidden;
+}
+
+.labPan:nth-of-type(2) {
+    border-left: .3vmin solid;
+    border-right: .3vmin solid;
+}
+
+label input {
+    width: 100%;
+    font-size: 3.4vmin;
+    text-align: center;
+    margin: 3px 0 0;
+    background-color: white;
+}
+
+.box {
+    animation-duration: 2s;
+    position: relative;
+    animation-fill-mode: forwards;
+}
+
+.box div {
+    padding: 5px 0;
+    height: max-content;
+}
+
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+
+
+input:checked {
+    outline: none;
+    background-color: green;
+    transform: scale(2);
+}
+
+
+span.spanButs {
+    display: block;
+}
+
+hr {
+    width: 100%;
+    margin: 11px auto;
+}
+
+.newBoxSel {
+    text-align: center;
+}
+
+.box select {
+    display: block;
+    margin: auto;
+}
+
+button#butAdd {
+    z-index: 1;
+    width: 15vmin;
+    height: 15vmin;
+    border-radius: 50%;
+    font-size: 2.6vmin;
+    font-weight: bolder;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: greenyellow;
+}
+
+#butParei {
+    /* z-index: 1; */
+    width: 15vmin;
+    height: 15vmin;
+    border-radius: 50%;
+    font-size: 2.6vmin;
+    font-weight: bolder;
+    position: relative;
+    top: calc(100% - 15vmin);
+    /* left: 10px; */
+    background: greenyellow;
+}
+
+div#boxSer {
+    margin: 0px;
+    padding: 0px 0 10px;
+}
+
+h3 {
+    padding: 5px 0;
+    background-color: rgb(255, 159, 15);
+}
+
+.rafia {
+    width: max-content;
+    margin: auto;
+    position: absolute;
+    top: 0;
+
+}
+
+.rafia>* {
+    position: absolute;
+}
+
+.rafia span {
+    display: block;
+    background: white;
+    width: max-content;
+    margin: auto;
+    padding: 2px 10px;
+    border: 4px outset green;
+    box-shadow: inset 6px 5px 4px #333, inset -2px -2px 4px #333;
+    border-radius: 10px;
+}
+
+.rafia select {
+    opacity: 0;
+    padding: 5px 3px;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+.rafia>* {
+    margin: auto;
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -0%);
+}
+
+
+.openTable button {
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: none;
+    width: 100px !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 40px;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+}
+
+
+
+/* corect css file */
+/* button show Table */
+a.openTable {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* end button show Table */
+/* search form */
+
+
+.title {
+    background: #7100d9;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    padding: 10px;
+}
+
+form.searchForm input[type='search'] {
+    padding: 10px;
+    width: 30%;
+    display: block;
+    margin: auto;
+    font-weight: bolder;
+    font-size: 17px;
+    border-radius: 37px;
+    border: 1px solid #004040;
+    background: #eee;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 6px #333;
+}
+
+form.searchForm input[type='search']:focus {
+    border: 1px solid cyan;
+    outline: none;
+    box-shadow: 3px 5px 9px #333;
+
+}
+
+form.searchForm input[type='submit'] {
+    display: none;
+}
+
+
+
+/* end search form */
+
+/* button ta piran */
+#inpcheckInp {
+    display: none;
+}
+
+#labinpInp {
+    width: max-content;
+    line-height: -4px;
+    margin: auto;
+    /* background: #decaca; */
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+#labinpInp span {
+    background: #c3aaaa;
+    padding: 5px;
+    font-size: 2vmin;
+    font-weight: bold;
+    border-radius: 5px 0 0 5px;
+}
+
+#pareBoxInp {
+    display: inline-block;
+}
+
+#boxInp {
+    width: 59px;
+    height: 24px;
+    background-color: #c3aaaa;
+    border-radius: 15px 15px 15px 15px;
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+    position: relative;
+    transition: .4s;
+}
+
+#cirInp {
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: grey;
+    position: absolute;
+    left: -6px;
+}
+
+input:checked {
+    outline: none;
+    background-color: green;
+    transform: scale(2);
+}
+
+#inpcheckInp:checked+label>#pareBoxInp>#boxInp {
+    background-color: rgb(95, 218, 58);
+}
+
+#inpcheckInp:checked+label>#pareBoxInp>#boxInp>#cirInp {
+    background-color: rgb(86, 187, 86);
+    left: calc(100% - 29px);
+}
+
+/* end button ta piran */
+/* ul list */
+.serDiv {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+ul {
+    width: max-content;
+    height: max-content;
+    margin: 5px auto;
+    list-style: none;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.liList,
+.liWhere {
+    display: none;
+    padding: 5px;
+    border-bottom: 1px solid;
+    width: 100%;
+}
+
+.liList:hover,
+.liWhere:hover {
+    background-color: #eee;
+}
+
+li.liList a {
+    display: block;
+}
+
+.seleLis .spanButDown {
+    display: flex !important;
+    cursor: pointer;
+    padding: 10px;
+    justify-content: center;
+    background: purple;
+    align-items: center;
+    color: white;
+    gap: 10px;
+}
+
+.seleLis svg {
+    width: 28px;
+    height: 25px;
+}
+
+/* end ul list */
+/*  box form */
+
+.boxForm {
+    height: max-content;
+    z-index: 99;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.boxForm:nth-of-type(even) {
+    background-color: rgb(172, 169, 169);
+}
+
+span.myDate {
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+/* .searchBoxForm */
+
+.searchBoxForm {
+    display: none;
+}
+
+.newBoxButs {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.bottomButs {
+    border: none;
+    width: 32%;
+    background: none;
+    color: white;
+}
+
+.editbut.bottomButs {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    font-size: 24px;
+    color: white;
+    justify-content: flex-start;
+    border-right: .3vmin solid;
+    cursor: pointer;
+}
+
+.editbut.bottomButs span {
+    background: transparent;
+    border: none;
+    width: 100% !important;
+    z-index: 10;
+    left: 0;
+    font-size: 14px;
+    top: 0;
+}
+
+a.delBut.bottomButs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #462626;
+}
+
+a:hover,
+.editbut.bottomButs:hover {
+    color: #0056b3 !important;
+    text-decoration: underline;
+}
+
+/* end .searchBoxForm */
+/* end box form */
+
+.alert {
+    text-align: center;
+    background: #d66262;
+    color: white;
+    margin: auto;
+    width: 90%;
+    box-shadow: 1px 1px 13px red;
+}
